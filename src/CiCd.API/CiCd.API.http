@@ -1,0 +1,5 @@
+@CiCd.API_HostAddress = http://localhost:5107
+
+GET {{CiCd.API_HostAddress}}/health
+
+###

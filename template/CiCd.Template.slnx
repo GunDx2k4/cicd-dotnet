@@ -1,0 +1,16 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path=".gitattributes" />
+    <File Path=".gitignore" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+    <File Path="nuget.config" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/CiCd.Template/CiCd.Template.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/CiCd.Template.Tests/CiCd.Template.Tests.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,39 @@
+<Solution>
+  <Folder Name="/.github/" />
+  <Folder Name="/.github/workflows/">
+    <File Path=".github/workflows/cicd-api.yml" />
+    <File Path=".github/workflows/cicd-common.yml" />
+    <File Path=".github/workflows/cicd-template.yml" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path=".dockerignore" />
+    <File Path=".editorconfig" />
+    <File Path=".gitattributes" />
+    <File Path=".gitignore" />
+    <File Path="CONTRIBUTING.md" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+    <File Path="docker-compose.yml" />
+    <File Path="docker-compose.override.yml" />
+    <File Path="LICENSE" />
+    <File Path="nuget.config" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/CiCd.API/CiCd.API.csproj" />
+    <Project Path="src/CiCd.Common/CiCd.Common.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/CiCd.API.Tests/CiCd.API.Tests.csproj" />
+    <Project Path="tests/CiCd.Common.Tests/CiCd.Common.Tests.csproj" />
+  </Folder>
+  <Folder Name="/template/">
+    <File Path="template/CiCd.Template.slnx" />
+    <Project Path="template/CiCd.Template.Package.csproj" />
+    <Project Path="template/src/CiCd.Template/CiCd.Template.csproj" />
+    <Project Path="template/tests/CiCd.Template.Tests/CiCd.Template.Tests.csproj" />
+  </Folder>
+  <Project Path="docker-compose.dcproj">
+    <Build />
+  </Project>
+</Solution>

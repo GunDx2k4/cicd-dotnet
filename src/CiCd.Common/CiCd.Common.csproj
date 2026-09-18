@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+
+    <PackageId>CiCd.Common</PackageId>
+    <Title>CiCd.Common</Title>
+    <Description>Shared common library for CiCd solution including helper extensions.</Description>
+    <PackageTags>dotnet;common;extensions;cicd</PackageTags>
+
+  </PropertyGroup>
+
+</Project>

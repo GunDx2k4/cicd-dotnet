@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <PackageType>Template</PackageType>
+    <PackageId>CiCd.Template</PackageId>
+    <Title>CiCd Web Template</Title>
+    <Authors>GunDx2k4</Authors>
+    <Description>ASP.NET Core Web MVC template with standard solution structure and CI/CD</Description>
+    <PackageTags>dotnet-new;templates;cicd;aspnetcore;solution</PackageTags>
+    <IsPackable>true</IsPackable>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+    <NoWarn>$(NoWarn);NU5128;NU5100</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="**\*" Exclude="bin\**;obj\**;**\bin\**;**\obj\**;*.user;**\*.user;*.nupkg;**\*.nupkg;CiCd.Template.Package.csproj" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,20 @@
+services:
+  cicd-api:
+    container_name: cicd-api
+    image: ${API_IMAGE:-ghcr.io/gundx2k4/cicd-api:latest}
+    ports:
+      - "127.0.0.1:5107:5107"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_HTTP_PORTS=5107
+    restart: unless-stopped
+    networks:
+      - cicd-network
+    volumes:
+      - cicd-api-data:/app/data
+
+volumes:
+  cicd-api-data:
+
+networks:
+  cicd-network:
